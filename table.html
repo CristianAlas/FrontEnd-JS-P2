@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="table.css">
+    <link rel="stylesheet" href="form.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <title>Table Movie</title>
+</head>
+<body>
+    <table id="table">
+        <thead>
+          <tr>
+            <th colspan="6">Movies</th>
+          </tr>
+          <tr>
+            <th>#</th>
+            <th>Title</th>
+            <th>Director</th>
+            <th>Genre</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+      <div id="form">
+      <h1>Update Movie</h1>
+        <div class="formbold-main-wrapper">
+          <!-- Author: FormBold Team -->
+          <!-- Learn More: https://formbold.com -->
+          <div class="formbold-form-wrapper">
+            <form method="POST">
+                <div class="formbold-input-flex">
+                  <div>
+                      <input
+                      type="text"
+                      name="title"
+                      id="title"
+                      placeholder="Avatar"
+                      class="formbold-form-input"
+                      />
+                      <label for="title" class="formbold-form-label"> Title </label>
+                  </div>
+                  <div>
+                      <input
+                      type="text"
+                      name="director"
+                      id="director"
+                      placeholder="Cooper"
+                      class="formbold-form-input"
+                      />
+                      <label for="director" class="formbold-form-label"> Director </label>
+                  </div>
+                </div>
+        
+                <div class="formbold-input-flex">
+                  <div>
+                      <input
+                      type="text"
+                      name="genre"
+                      id="genre"
+                      placeholder="Aventure"
+                      class="formbold-form-input"
+                      />
+                      <label for="genre" class="formbold-form-label"> Genre </label>
+                  </div>
+                <button id="btnUpdate" class="formbold-btn">
+                  Update
+                </button>
+            </form>
+          </div>
+        </div>
+      </div>
+      <script src="table.js"></script>
+</body>
+</html>
+
